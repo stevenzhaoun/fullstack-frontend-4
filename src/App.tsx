@@ -1,12 +1,11 @@
 import { Route, Routes } from 'react-router'
 import Layout from './components/Layout'
+import ListUser from './modules/users/ListUser'
 
 function Dashboard() {
   return <div>Dashboard</div>
 }
-function Users() {
-  return <div>Users</div>
-}
+
 function Roles() {
   return <div>Roles</div>
 }
@@ -22,7 +21,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout/>}>
         <Route path="/dashboard" element={<Dashboard/>}/>
-        <Route path="/users" element={<Users/>}/>
+        <Route path="/users" element={<ListUser/>}/>
         <Route path="/roles" element={<Roles/>}/>
         <Route path="/products" element={<Products/>}/>
         <Route path="/orders" element={<Orders/>}/>

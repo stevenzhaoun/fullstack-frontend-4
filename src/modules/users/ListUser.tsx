@@ -4,7 +4,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { useEffect, useState } from 'react'
 import { listUsers } from "../../api/users.api";
 import type { Role, User } from "../../types";
-import { useNavigate, useParams } from "react-router";
+import { useNavigate } from "react-router";
 
 const columns: GridColDef[] = [
     { field: 'id', headerName: 'User ID', width: 90 },

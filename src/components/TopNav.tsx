@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
 import { useState } from 'react';
 import { useUser } from '../hooks/useUser';
 

@@ -29,8 +29,8 @@ export default function CreateOrUpdateUser() {
         horizontal: 'center',
     });
 
-    const { data: roles, isLoading: isLoadingRoles, error: errorRoles } = useDataLoad(listRoles)
-    const { data: userData, isLoading: isLoadingUser, error: errorUser } = useDataLoad( async() => await getUser(userId as string))
+    const { data: roles, isLoading: isLoadingRoles } = useDataLoad(listRoles)
+    const { data: userData, isLoading: isLoadingUser } = useDataLoad( async() => await getUser(userId as string))
 
     const params = useParams()
     const userId = params.userId
